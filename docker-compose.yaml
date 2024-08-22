@@ -29,7 +29,8 @@ services:
       - DB_USER=root
       - DB_PASSWORD=root
       - DB_DATABASE=nodedb
-    #command: "node index.js"
+    command: >
+        sh -c "npm install && node index.js"
 
   db:
     image: mysql:5.7
